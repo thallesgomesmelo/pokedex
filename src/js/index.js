@@ -44,10 +44,22 @@ function getPokemon(_pokemon, card) {
       const id = `${data.id}`.padStart(3, 0);
       document.querySelector(`#${card} .detalhes span`).innerText = `#${id}`;
 
-      let img = data.sprites.other.home.front_default;
-      document
-        .querySelector(`#${card}  .cartao-imagem img`)
-        .setAttribute("src", img);
+      const imgAPI = data.sprites.other.home.front_default;
+      const imagElem = document.querySelector(`#${card}  .cartao-imagem img`);
+      imagElem.setAttribute("src", imgAPI);
+      imagElem.setAttribute("alt", _pokemon);
+
+      const tipoPokemon = document.querySelector(`#${card} .tipo`);
+      tipoPokemon.innerText = data.types[0].type.name;
+
+      const [HP, ATK, DEF, VEL] = document.querySelectorAll(
+        `#${card} .status ul li span`
+      );
+      const status = data.stats;
+      HP.innerText = status[0].base_stat;
+      ATK.innerText = status[1].base_stat;
+      DEF.innerText = status[2].base_stat;
+      VEL.innerText = status[5].base_stat;
 
       console.log(data.name);
     })
@@ -55,3 +67,5 @@ function getPokemon(_pokemon, card) {
       console.log(error);
     });
 }
+
+// pokemon/?offset=15&limit=5"

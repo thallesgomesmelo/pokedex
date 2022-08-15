@@ -41,6 +41,8 @@ function criarPokemon(arrayUrlPokemon) {
         const ATK = pokemon.stats[1].base_stat
         const DEF = pokemon.stats[2].base_stat
         const VEL = pokemon.stats[5].base_stat
+        const ATKRapido = pokemon.abilities[0].ability.name
+        const ATKCaregado = pokemon.abilities[1].ability.name
 
         const buildListPokemon = `<li class="pokemon" id="${nome}">
           <img src="${imgPokemon}" alt="${nome}"/>
@@ -80,8 +82,8 @@ function criarPokemon(arrayUrlPokemon) {
               <h3>Habilidades</h3>
 
               <ul>
-                <li></li>
-                <li></li>
+                <li>${ATKRapido}</li>
+                <li>${ATKCaregado}</li>
               </ul>
             </div>
           </div>

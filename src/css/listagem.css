@@ -1,5 +1,7 @@
 .listagem {
   max-width: 200px;
+  max-height: 674px;
+  overflow: hidden auto;
 }
 
 .listagem .pokemon {
@@ -18,7 +20,6 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .listagem .pokemon:hover {
@@ -30,10 +31,11 @@
 }
 
 .listagem .pokemon img {
-  width: 25%;
+  width: 30%;
   border-radius: 50%;
 }
 
 .listagem .pokemon span {
   padding-right: 20px;
+  text-transform: capitalize;
 }

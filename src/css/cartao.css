@@ -40,7 +40,7 @@
 
 .cartao-pokemon .cartao-informacoes {
   background-color: #ffffff;
-  padding: 80px 50px 50px;
+  padding: 80px 15px 50px;
   margin-top: -70px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -77,26 +77,26 @@
   display: block;
 }
 
-.tipo-eletrico {
+.tipo-electric {
   background-color: #fcc719;
 }
 
-.tipo-fogo {
+.tipo-fire {
   background-color: #ed8a8b;
 }
 
-.tipo-agua {
+.tipo-water {
   background-color: #76befe;
 }
 
-.tipo-grama {
+.tipo-grass {
   background-color: #49d0b0;
 }
 
-.tipo-fantasma {
+.tipo-ghost {
   background-color: #ba68c8;
 }
 
-.tipo-dragao {
+.tipo-dragon {
   background-color: #c29791;
 }

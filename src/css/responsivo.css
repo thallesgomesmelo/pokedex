@@ -8,6 +8,11 @@
     padding: 30px 0;
   }
 
+  .cartoes-pokemon {
+    display: flex;
+    justify-content: center;
+  }
+
   .cartao-pokemon {
     max-width: 300px;
   }
@@ -18,7 +23,7 @@
   }
 
   .cartao-pokemon .cartao-informacoes {
-    padding: 60px 30px 30px;
+    padding: 60px 10px 30px;
     margin-top: -50px;
   }
 
@@ -34,7 +39,9 @@
   }
 
   .listagem {
-    max-width: 300px;
+    max-width: 100%;
+    max-height: 230px;
+    overflow-x: auto;
   }
 
   .listagem ul {

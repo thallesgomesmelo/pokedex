@@ -10,6 +10,7 @@
 
 .cartao-pokemon .nome {
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 
 .cartao-pokemon .tipo {
@@ -82,7 +83,7 @@
 }
 
 .tipo-fire {
-  background-color: #ed8a8b;
+  background-color: #f54546;
 }
 
 .tipo-water {
@@ -99,4 +100,24 @@
 
 .tipo-dragon {
   background-color: #c29791;
+}
+
+.tipo-bug {
+  background-color: #75e07f;
+}
+
+.tipo-normal {
+  background-color: #c6cfc7;
+}
+
+.tipo-poison {
+  background-color: #d13beb;
+}
+
+.tipo-ground {
+  background-color: #ab9842;
+}
+
+.tipo-fairy {
+  background-color: #f76aa5;
 }
